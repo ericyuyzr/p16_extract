@@ -3,6 +3,8 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+*.csv
+
 # C extensions
 *.so
 
@@ -200,6 +202,7 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
 
 # Marimo
 marimo/_static/
