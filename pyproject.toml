@@ -1,0 +1,19 @@
+[project]
+name = "p16-extract"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "en-core-sci-md",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.8",
+    "numpy<2.0.0",      # This is the critical change
+    "pandas<3.0.0",      # Pandas 3.0 requires Numpy 2.0+, so we must downgrade this too
+    "scispacy>=0.5.5",
+    "seaborn>=0.13.2",
+    "spacy>=3.7.5",
+]
+
+[tool.uv.sources]
+en-core-sci-md = { url = "https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_md-0.5.4.tar.gz" }
